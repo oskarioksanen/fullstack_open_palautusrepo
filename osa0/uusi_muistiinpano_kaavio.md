@@ -25,12 +25,12 @@ sequenceDiagram
     server-->>browser: The css file
     deactivate server
 
-    Note left of browser: Browser sends the GET request to start executing the js file, which<br/>fetches the notes data from server
+    Note left of browser: Browser sends the GET request to start executing<br/>the js file, which fetches the notes data from server
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
     activate server
     server-->>browser: The JavaScript file
     deactivate server
-    Note right of browser: Browser starts to execute the code defined in the js file<br/>to fetch the JSON data of saved notes
+    Note right of browser: Browser starts to execute the code defined in<br/>the js file<br/>to fetch the JSON data of saved notes
 
     Note left of browser: Browser sends the GET request to receive the notes data from server
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
