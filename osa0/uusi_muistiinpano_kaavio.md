@@ -13,7 +13,7 @@ sequenceDiagram
     server-->>browser: Location: /exampleapp/notes
     deactivate server
     
-    Note left of browser: Browser receives the redirect response and sends<br/>the GET request to retrieve<br/>the exampleapp page
+    Note left of browser: Browser receives the redirect response and sends<br/>the GET request to retrieve the exampleapp page
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server-->>browser: HTML document
@@ -30,6 +30,6 @@ sequenceDiagram
     activate server
     server-->>browser: The JavaScript file
     deactivate server
-    Note right of browser: Browser starts to execute the code defined in<br/>the js file to fetch the JSON data of saved notes
+    Note right of browser: Browser starts to execute the code defined in the js file<br/>to fetch the JSON data of saved notes
 
 ```
