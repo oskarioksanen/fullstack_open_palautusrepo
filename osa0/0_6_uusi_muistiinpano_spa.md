@@ -9,7 +9,7 @@ sequenceDiagram
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     activate server
 
-        Note right of server: Server processes the POST request and adds the new note<br/>to the notes data and responses a message: "note created"
+    Note right of server: Server processes the POST request and adds the new note<br/>to the notes data and responses a message
 
     server-->>browser: JSON data: {message: "note created"}
     deactivate server
