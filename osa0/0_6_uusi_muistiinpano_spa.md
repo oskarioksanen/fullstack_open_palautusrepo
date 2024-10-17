@@ -1,4 +1,4 @@
-Here is a flow chart of creating a new note in https://studies.cs.helsinki.fi/exampleapp/spa:
+Here is a flow chart of creating a new note in Single app page version (https://studies.cs.helsinki.fi/exampleapp/spa):
 
 ```mermaid
 sequenceDiagram
