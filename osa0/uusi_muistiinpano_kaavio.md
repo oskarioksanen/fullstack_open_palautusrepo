@@ -12,6 +12,6 @@ sequenceDiagram
     
     Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
 
-    Esimerkki yllä
 
 ```
+    Esimerkki yllä
