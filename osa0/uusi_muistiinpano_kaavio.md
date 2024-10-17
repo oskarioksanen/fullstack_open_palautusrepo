@@ -24,7 +24,22 @@ sequenceDiagram
 
     Note right of server: Server processes the POST request<br/>and returns a redirect response
 
-    server->>browser: Location: /exampleapp/notes
+    server-->>browser: Location: /exampleapp/notes
     deactivate server
+    
+    Note right of server: Browser receives the redirect response<br/>and sends the GET request to retrieve<br/>the exampleapp page
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    activate server
+    server-->>browser: HTML document
+    deactivate server
+
+    Note right of server: Browser sends the GET request to retrieve<br/>style of the exampleapp page defined in a css file
+    
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    activate server
+    server-->>browser: css file
+    deactivate server
+
 
 ```
