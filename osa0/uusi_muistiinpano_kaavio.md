@@ -11,7 +11,10 @@ sequenceDiagram
     deactivate server
     
     Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
+ ```
+Esimerkki yllä
 
+```mermaid
 sequenceDiagram
     participant browser
     participant server
@@ -25,4 +28,3 @@ sequenceDiagram
 
 
 ```
-    Esimerkki yllä
