@@ -5,7 +5,7 @@ sequenceDiagram
     participant browser
     participant server
     
-    Note left of browser: Browser receives the redirect response and sends<br/>the GET request to retrieve the exampleapp page
+    Note left of browser: Browser sends the GET request to retrieve html<br/>document of the exampleapp page
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server-->>browser: HTML document
@@ -17,8 +17,8 @@ sequenceDiagram
     server-->>browser: The css file
     deactivate server
 
-    Note left of browser: Browser sends the GET request to start executing<br/>the js file, which fetches the notes data from server
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    Note left of browser: Browser sends the GET request to start executing<br/>the js file of the single app page
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
     activate server
     server-->>browser: The JavaScript file
     deactivate server
@@ -27,7 +27,7 @@ sequenceDiagram
     Note left of browser: Browser sends the GET request to receive<br/>the notes data from server
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
-    server-->>browser: The Json data including the notes info
+    server-->>browser: The Json data
     deactivate server
     Note right of browser: Browser executes the callback function to render the notes<br/>received from the server
 ```
