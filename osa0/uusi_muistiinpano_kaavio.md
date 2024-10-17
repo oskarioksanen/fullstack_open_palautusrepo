@@ -20,11 +20,11 @@ sequenceDiagram
     participant server
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
-    activate server    
+    activate server
+
+    Note right of server: Server processes the POST request<br/>and returns a redirect response
+
     server->>browser: Location: /exampleapp/notes
     deactivate server
-
-    Note right of server: Server processes the POST request and returns a redirect response
-
 
 ```
