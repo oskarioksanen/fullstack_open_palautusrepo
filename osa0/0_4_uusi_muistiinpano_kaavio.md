@@ -8,7 +8,7 @@ sequenceDiagram
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
 
-    Note right of server: Server processes the POST request<br/>and returns a redirect response
+    Note right of server: Server processes the POST request (saves the new note)<br/>and returns a redirect response
 
     server-->>browser: Location: /exampleapp/notes
     deactivate server
@@ -25,7 +25,7 @@ sequenceDiagram
     server-->>browser: The css file
     deactivate server
 
-    Note left of browser: Browser sends the GET request to start executing the js file,<br/>which fetches the notes data from server and adds the new note to the data
+    Note left of browser: Browser sends the GET request to start executing the js file,<br/>which fetches the notes data from server
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
     activate server
     server-->>browser: The JavaScript file
