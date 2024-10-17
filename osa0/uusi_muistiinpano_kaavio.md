@@ -32,7 +32,7 @@ sequenceDiagram
     deactivate server
     Note right of browser: Browser starts to execute the code defined in<br/>the js file to fetch the JSON data of saved notes
 
-    Note left of browser: Browser sends the GET request to receive the notes data from server
+    Note left of browser: Browser sends the GET request to receive<br/>the notes data from server
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
     server-->>browser: The Json data including the notes info
